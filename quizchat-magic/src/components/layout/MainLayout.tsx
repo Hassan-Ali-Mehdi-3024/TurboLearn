@@ -41,7 +41,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       {/* Sidebar */}
       <div className="w-64 bg-sidebar border-r border-border shadow-sm flex flex-col">
         <div className="p-4 border-b border-border flex items-center justify-center">
-          <h1 className="text-xl font-bold text-gradient">PDFLearner</h1>
+          <h1 className="text-xl font-bold text-gradient">TurboLearn</h1>
         </div>
         
         <nav className="flex-1 px-2 py-4 space-y-1">

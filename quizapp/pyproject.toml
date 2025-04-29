@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "quizapp"
 version = "0.1.0"
-description = "MCQs Bank Application"
+description = "TurboLearnlication"
 authors = ["Your Name <your.email@example.com>"]
 
 [tool.poetry.dependencies]
