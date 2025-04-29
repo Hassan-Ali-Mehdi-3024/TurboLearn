@@ -7,8 +7,8 @@ An AI-powered web application to create, manage, and practice flashcards, quizze
 
 ## 🌐 Live Deployment
 
-- **Frontend:** [mcqsbank-frontend.onrender.com](https://mcqsbank-frontend.onrender.com)
-- **Backend:** [django-based-mcq-app.onrender.com](https://django-based-mcq-app.onrender.com)
+- **Frontend:** [Link to Frontend](https://mcqsbank-frontend.onrender.com)
+- **Backend:** [Link to Backend](https://django-based-mcq-app.onrender.com)
 
 ---
 
@@ -26,7 +26,7 @@ An AI-powered web application to create, manage, and practice flashcards, quizze
 
 ---
 
-## 📁 Frontend Folder Structure (`/quizchat-magic/src`)
+## 📁 Frontend Folder Structure (`/TurboLearn-Frontend/src`)
 
 The frontend uses a modular and scalable structure organized by functionality:
 
@@ -126,10 +126,10 @@ OPENAI_API_KEY=...
 
 ## 🚀 Deployment (Render)
 
-- Frontend: Render Static Site from `/quizchat-magic/`
+- Frontend: Render Static Site from `/TurboLearn-Frontend/`
   - Build Command: `npm install && npm run build`
   - Publish Directory: `dist`
-- Backend: Python Web Service from `/quizapp/`
+- Backend: Python Web Service from `/TurboLearn-Backend/`
   - Start Command: `gunicorn quizapp.wsgi:application --bind 0.0.0.0:$PORT`
 
 ---
