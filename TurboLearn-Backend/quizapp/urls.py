@@ -26,8 +26,9 @@ from rest_framework_simplejwt.views import (
 from api.auth import register_user, check_username, get_username_by_email
 from django.conf import settings
 from django.conf.urls.static import static
-
+from django.views.generic import RedirectView
 from django.http import JsonResponse
+import os
 
 def test_view(request):
     return JsonResponse({"status": "alive"})
@@ -60,3 +61,7 @@ urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns += [
+    path('favicon.ico', RedirectView.as_view(url='/static/favicon.ico', permanent=True)),
+] + static(settings.STATIC_URL, document_root=os.path.join(settings.BASE_DIR, 'static'))
