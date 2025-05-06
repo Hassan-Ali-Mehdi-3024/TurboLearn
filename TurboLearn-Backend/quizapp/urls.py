@@ -28,10 +28,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import RedirectView
 from django.http import JsonResponse
+from django.http import HttpResponse
 import os
 
 def test_view(request):
     return JsonResponse({"status": "alive"})
+
+def health_check(request):
+    # Respond to both GET and HEAD with a 200
+    return HttpResponse("OK", status=200)
 
 schema_view = get_schema_view(
     openapi.Info(
@@ -47,6 +52,7 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
+    path('', health_check),
     path('api/test/', test_view),
 
     path('admin/', admin.site.urls),
