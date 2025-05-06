@@ -7,7 +7,7 @@ interface ChatMessage {
 }
 
 class ChatService {
-  private baseURL = 'https://turbolearn.onrender.com/api';
+  private baseURL = 'https://turbolearn-backend.onrender.com/api';
 
   async uploadPDF(file: File): Promise<string> {
     try {
