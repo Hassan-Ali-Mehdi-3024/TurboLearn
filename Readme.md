@@ -7,8 +7,8 @@ An AI-powered web application to create, manage, and practice flashcards, quizze
 
 ## 🌐 Live Deployment
 
-- **Frontend:** [Link to Frontend](https://mcqsbank-frontend.onrender.com)
-- **Backend:** [Link to Backend](https://django-based-mcq-app.onrender.com)
+- **Frontend:** [Link to Frontend](https://turbolearn.onrender.com)
+- **Backend:** [Link to Backend](https://turbolearn-backend.onrender.com)
 
 ---
 
@@ -110,7 +110,7 @@ src/
 
 ### Frontend (Render Static Site)
 ```
-VITE_API_URL=https://django-based-mcq-app.onrender.com
+VITE_API_URL=https://turbolearn-backend.onrender.com
 ```
 
 ### Backend (Render Web Service)

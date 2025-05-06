@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://turbolearn.onrender.com/api';
+const API_URL = 'https://turbolearn-backend.onrender.com/api';
 
 // Get the auth token from localStorage
 const getAuthHeaders = () => {
